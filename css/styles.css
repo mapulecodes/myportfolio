@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adjust font size */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; /* Adjust as needed */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: grey; /*  grey */
+}
+.navbar-brand img {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.navbar-nav {
+    padding-right: 30px; /* Adjust the padding as needed */
+}
+
+/* Download CV button */
+.btn-download {
+  background-color: #666; /* Lighter grey */
+  border: 2px solid #666; /* Add border */
+  color: white;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn-download:hover {
+  background-color: #888; /* Lighter grey on hover */
+  border-color: #888;
+}
+
+:root{
+
+} 
+ .hero-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    padding: 150px 180px;
+
+    #home .row {
+        display: grid;
+        align-items: center;
+        height: 100vh; /* Adjust the height of the row */
+    }
+    
+    #home .col-md-6 {
+        text-align: center; /* Center align the content */
+    }
+    
+    #home .col-md-6 h2 {
+        margin-top: 0; /* Remove default margin */
+        margin-bottom: 0; /* Remove default margin */
+    }
+    .line {
+        width: 50px; /* Adjust the width of the line */
+        height: 2px; /* Adjust the height of the line */
+        background-color: black; /* Change the color of the line */
+        margin-top: 10px; /* Adjust the distance between the line and the text */
+    }
+    
+
+ }
+ .hero-image>img{
+    width: 200px;
+    aspect-ratio: 1/1;
+ }
+ .hero-text{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 120px;
+ }
+
+ #about p {
+    margin-top: 20px; /* Adjust the margin-top to create space between heading and paragraph */
+}
+
+#about img {
+    display: block; /* Make the img a block-level element */
+    margin: 20px auto; /* Adjust the margin to center the img horizontally */
+}
+
+/* CSS for adjusting image size */
+.image1 {
+    width: 50%; /* Adjust width as needed */
+}
+
+.image2 {
+    width: 70%; /* Adjust width as needed */
+}
+
+.heading-image {
+    width: 100%; /* Adjust width as needed */
+}
+
+/* Optional: Additional styling */
+.section {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-md-6 {
+    float: left;
+    width: 50%;
+}
+
+.carousel-inner {
+    padding: 2em; /* Increased padding for larger page */
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card img {
+    max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+  
+  
+/* Projects Section */
+.card.zoom {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.card.zoom img {
+  transition: transform 0.5s;
+}
+
+.card.zoom:hover {
+  transform: scale(1.05);
+}
+
+.card.zoom:hover img {
+  transform: scale(1.1);
+}
